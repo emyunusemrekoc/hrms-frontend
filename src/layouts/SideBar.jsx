@@ -23,15 +23,15 @@ export default function SideBar() {
                         
                     >
        
-                        <Menu.Item as={Link} to="/home" style={{ color: 'white' }}style={{ marginTop: "4.5em" }} header >
+                        <Menu.Item as={Link} to="/home" style={{ color: 'white',marginTop: "4.5em" }} header >
                         <Icon name='home' />
                             Home
                         </Menu.Item>
-                        <Menu.Item as={NavLink} to="/candidatelist" style={{ color: 'white' }} style={{ marginTop: "2em" }} header >
+                        <Menu.Item as={NavLink} to="/candidatelist" style={{ color: 'white',marginTop: "2em" }} header >
                             <Icon name='address card' />
                             İş Arayanlar
                         </Menu.Item>
-                        <Menu.Item as={NavLink} to="/employerlist" style={{ color: 'white' }}style={{ marginTop: "2em" }}header >
+                        <Menu.Item as={NavLink} to="/employerlist" style={{ color: 'white' ,marginTop: "2em" }}header >
                             <Icon name='building' />
                             Şirketler
                         </Menu.Item>

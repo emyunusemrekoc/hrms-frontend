@@ -9,7 +9,7 @@ export default function JobPostingList() {
 
     useEffect(() => {
         let jobPostingService = new JobPostingService();
-        jobPostingService. getAllJobPostingsByIsActive().then(result => setJobPostings(result.data.data))
+        jobPostingService.getAllJobPostingsByIsActive().then(result => setJobPostings(result.data.data))
     }, [])
 
     return (

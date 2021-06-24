@@ -18,5 +18,8 @@ export default class JobPostingService{
             return axios.get("http://localhost:8080/api/jobPostings/findAllByIsActiveAndEmployer_CompanyName?companyName="+companyName)
         }
 
+        addJobPosting(values){
+            return axios.post("http://localhost:8080/api/jobPostings/add",values)
+        }
 
-}
+}       

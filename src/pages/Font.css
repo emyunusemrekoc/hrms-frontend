@@ -1,0 +1,21 @@
+
+h1 {
+  font-size: 55px;
+  letter-spacing: 1px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h7 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.ui.checkbox {
+  font-size: 1.3em;
+ 
+   letter-spacing: 1px;
+  top: 25px;
+}
+
+

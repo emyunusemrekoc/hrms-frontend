@@ -23,9 +23,12 @@ export default function Navi() {
 
           <Menu.Menu position='right'>
             <Menu.Item position="right">
-              <Button style={{ marginLeft: "0.3em" }} inverted color="linkedin">İlan Ekle</Button>
-              <Button style={{ marginLeft: "0.3em" }} inverted color="vk">Giriş Yap</Button>
-              <Button style={{ marginLeft: "0.3em" }} inverted positive  >Kaydol</Button>
+            
+              <Button type as={Link} to="/jobpostingadd" style={{ marginLeft: "0.3em" }} compact color="linkedin" >İş İlanı Ekle</Button>
+              <Button  style={{ marginLeft: "0.3em" }} compact color="vk">Giriş Yap</Button>
+              <Button style={{ marginLeft: "0.3em" }}  inverted positive  >Kaydol</Button>
+
+             
             </Menu.Item>
 
           </Menu.Menu>

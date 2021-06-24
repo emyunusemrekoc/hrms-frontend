@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Table, Menu, Icon, Label,Header ,Image} from 'semantic-ui-react'
+import { Table, Menu, Icon,Header ,Image} from 'semantic-ui-react'
 import CandidateService from '../services/candidateService'
 
 export default function CandidateList() {

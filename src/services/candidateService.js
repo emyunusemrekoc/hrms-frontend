@@ -1,11 +1,9 @@
 import axios from "axios"
 
-export default class CandidateService{
+export default class CandidateService {
 
-        getAllCandidates(){
-            return axios.get("http://localhost:8080/api/candidates/findAll")
-        }
-
-
-
+    getAllCandidates() {
+        return axios.get("http://localhost:8080/api/candidates/findAll")
+    }
+    
 }
