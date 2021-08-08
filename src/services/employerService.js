@@ -6,6 +6,11 @@ export default class EmployerService{
             return axios.get("http://localhost:8080/api/employers/findAll")
         }
 
+        addEmployer(values){
+            return axios.post("http://localhost:8080/api/employers/add",values)
+        }
+    
+
 
 
 }

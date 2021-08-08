@@ -2,6 +2,7 @@ import React from 'react'
 import { Image ,Button, Icon} from 'semantic-ui-react'
 
 export default function Home() {
+  console.log("asddsa")
     return (
         <div>
          

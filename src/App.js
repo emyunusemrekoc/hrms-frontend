@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       
       <Navi/>
-      {/* <Sidebar/> */}
+      <Sidebar/>
       
       <Container className = "main">
       <Dashboard/>

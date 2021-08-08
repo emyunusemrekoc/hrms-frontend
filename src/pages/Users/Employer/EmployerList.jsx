@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Table, Menu, Icon,Header ,Image} from 'semantic-ui-react'
-import EmployerService from '../services/employerService'
+import EmployerService from '../../../services/employerService'
 
 export default function EmployerList() {
 

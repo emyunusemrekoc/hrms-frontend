@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Table, Menu, Icon,Header ,Image} from 'semantic-ui-react'
-import CandidateService from '../services/candidateService'
+import CandidateService from '../../../services/candidateService'
 
 export default function CandidateList() {
 
@@ -10,7 +10,7 @@ export default function CandidateList() {
         let candidateService = new CandidateService();
         candidateService.getAllCandidates().then(result => setCandidates(result.data.data))
     }, [])
-
+    console.log(typeof("asddsa"))
     return (
 
 
@@ -23,7 +23,7 @@ export default function CandidateList() {
                 <Table.Header >
                     
                     <Table.Row>
-                        <Table.HeaderCell Header > ID </Table.HeaderCell>
+                        
                         <Table.HeaderCell Header> ADI</Table.HeaderCell>
                         <Table.HeaderCell Header> SOYADI</Table.HeaderCell>
                         <Table.HeaderCell Header> E-MAİL ADRESİ</Table.HeaderCell>
@@ -36,9 +36,8 @@ export default function CandidateList() {
                     {
                         candidates.map(candidate=>(
 
-                       
                     <Table.Row key ={candidate.id}>
-                        <Table.Cell >{candidate.id}</Table.Cell>
+                        
                         <Table.Cell>{candidate.firstName}</Table.Cell>
                         <Table.Cell>{candidate.lastName}</Table.Cell>
                         <Table.Cell>{candidate.email}</Table.Cell>

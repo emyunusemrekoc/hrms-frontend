@@ -1,14 +1,13 @@
 import React, { useState,useEffect } from 'react'
 import { Button, Dropdown, Input, TextArea, Card, Form, Grid, Checkbox } from 'semantic-ui-react';
 import * as Yup from "yup";
-import "./Font.css"
+import "./JobPostingAdd.css"
 import { useFormik } from "formik";
 import { useHistory } from 'react-router-dom';
-import JobPostingService from '../services/jobPostingService';
-import moment from 'moment';
-import CityService from '../services/cityService';
-import JobTypeService from '../services/jobTypeService';
-import JobTitleService from '../services/jobTitleService';
+import JobPostingService from '../../services/jobPostingService';
+import CityService from '../../services/cityService';
+import JobTypeService from '../../services/jobTypeService';
+import JobTitleService from '../../services/jobTitleService';
 
 export default function JobPostingAdd() {
 
@@ -50,10 +49,9 @@ export default function JobPostingAdd() {
     validationSchema: JobPostingSchema,
     onSubmit: (values) => {
       values.employerId = 4;
-     
-
+      
       jobPostingService.addJobPosting(values).then((result) => console.log(result.data.data));
-      alert(JSON.stringify(values, null, 2));
+      //alert(JSON.stringify(values, null, 2));
       history.push("/jobpostinglist");
     },
   });
@@ -270,7 +268,7 @@ export default function JobPostingAdd() {
                   type="date"
                   error={Boolean(formik.errors.applicationDeadline)}
                   onChange={formik.handleChange}
-                  minDate={moment().toDate()}
+      
                   value={formik.values.applicationDeadline}
                   name="applicationDeadline"
                  placeholder="Son başvuru tarihi"

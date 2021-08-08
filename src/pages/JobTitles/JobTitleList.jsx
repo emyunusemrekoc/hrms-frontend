@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Table, Menu, Icon,Header ,Image} from 'semantic-ui-react'
-import JobTitleService from '../services/jobTitleService'
+import JobTitleService from '../../services/jobTitleService'
 
 export default function JobTitleList() {
 

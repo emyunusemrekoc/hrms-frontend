@@ -40,6 +40,7 @@ export default function SideBar() {
                             <Icon name='suitcase' />
                             İş Ünvanları
                         </Menu.Item>
+                      
 
                     </Sidebar>
 
